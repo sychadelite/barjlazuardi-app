@@ -1,0 +1,43 @@
+/* start scroll to top button styling */
+#btnScrollToTop {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e62739;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#btnScrollToTop:active {
+    background: #cc2333;
+}
+/* end scroll to top button styling */
+
+/* start hamburger menu button styling */
+#btnHamburgerMenu {
+    position: fixed;
+    top: 38px; right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.6s;
+    z-index: 100;
+    display: none;
+}
+
+#btnHamburgerMenu:active {
+    background: #236ccc;
+}
+/* end hamburger menu button styling */
