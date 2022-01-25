@@ -9,7 +9,7 @@
     </ul>
 
     <button id="btnHamburgerMenu" class="hamburger" @click.prevent="openNav()" href="javascript:void(0);">
-        <i class="material-icons">menu</i>
+        <i class="material-icons" style="padding-top: 4px;">menu</i>
     </button>
     
     <div id="myLinks" class="overlay">
