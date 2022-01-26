@@ -170,7 +170,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f2f2f2;
+    background: #041e1d;
 }
 /* end achievement section*/
 
