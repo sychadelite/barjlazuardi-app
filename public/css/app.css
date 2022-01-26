@@ -352,6 +352,9 @@ header.sticky ul li a:hover {
 body {
   background: #041e1d;
   min-width: 100%;
+}
+
+main {
   overflow-x: hidden;
 }
 
