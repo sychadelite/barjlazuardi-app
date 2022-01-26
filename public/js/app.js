@@ -40207,7 +40207,7 @@ var render = function () {
               },
             },
           },
-          [_vm._v("Courses")]
+          [_vm._v("Features")]
         ),
         _vm._v(" "),
         _c(
@@ -40247,7 +40247,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", { staticClass: "nav-item" }, [
         _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _vm._v("Courses"),
+          _vm._v("Features"),
         ]),
       ]),
       _vm._v(" "),

@@ -4,7 +4,7 @@
     <ul class="nav-menu">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
     </ul>
 
@@ -17,7 +17,7 @@
         <div class="overlay-content">
             <a @click.prevent="closeNav()" class="" href="#">Home</a>
             <a @click.prevent="closeNav()" class="" href="#">About</a>
-            <a @click.prevent="closeNav()" class="" href="#">Courses</a>
+            <a @click.prevent="closeNav()" class="" href="#">Features</a>
             <a @click.prevent="closeNav()" class="" href="#">Profile</a>
         </div>
     </div>
