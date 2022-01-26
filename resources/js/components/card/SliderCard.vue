@@ -12,7 +12,7 @@
                         <i class="fab fa-twitter"></i>
                     </div>
                     <div class="name-achievement">
-                        <span class="name">Crazy Rich Perumnas Tangerang</span>
+                        <span class="name">Crazy Rich Perum</span>
                         <span class="year">2022</span>
                     </div>
                     <div class="rating">
@@ -29,9 +29,11 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="slider-indicator">
+            <div class="swiper-button-next ripple" id="btnNavigatorSlider"></div>
+            <div class="swiper-button-prev ripple" id="btnNavigatorSlider"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 </template>
 
@@ -46,27 +48,56 @@ export default {
     },
     mounted() {
         var swiper = new Swiper(".mySwiper", {
+            speed: 1000,
             slidesPerView: 3,
             spaceBetween: 30,
             slidesPerGroup: 3,
             loop: true,
             loopFillGroupWithBlank: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+                el: ".swiper-pagination",
+                clickable: true,
             },
             navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
+            // Responsive breakpoints
+            // breakpoints: {
+            //     // when window width is <= 480px
+            //     320: {
+            //         slidesPerView: 1,
+            //         spaceBetween: 10,
+            //         slidesPerGroup: 1,
+            //     },
+            //     // when window width is <= 900px
+            //     480: {
+            //         slidesPerView: 2,
+            //         spaceBetweenSlides: 10,
+            //         slidesPerGroup: 2,
+            //     },
+            //     // when window width is <= 900px
+            //     600: {
+            //         slidesPerView: 2,
+            //         spaceBetweenSlides: 10,
+            //         slidesPerGroup: 2,
+            //     }
+            // }
         });
     }
 }
 </script>
 
 <style>
+.slider-indicator {
+    margin-top: 20px;
+}
 .swiper {
-    width: 950px;
+    width: 900px;
 }
 .slider-card .image {
     height: 140px;
@@ -87,7 +118,8 @@ export default {
     background: #fff;
     border-radius: 20px;
     margin: 20px 0;
-    width: 280px;
+    width: 200px;
+    cursor: pointer;
 }
 .slider-card::before {
     content: "";

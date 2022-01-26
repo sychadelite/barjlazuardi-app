@@ -59,7 +59,7 @@
         <!-- end slider card section -->
 
         <!-- start scroll to top button -->
-        <button id="btnScrollToTop">
+        <button id="btnScrollToTop" class="ripple">
             <i class="material-icons" style="padding-top: 3px;">arrow_upward</i>
         </button>
         <!-- end scroll to top button -->
@@ -115,7 +115,7 @@ export default {
    position: relative;
    width: 100%;
    height: 100vh;
-   background-image: url('/img/forest-04.webp');
+   background-image: url('/img/forest-05.webp');
    background-size: cover;
 }
 
@@ -124,6 +124,7 @@ export default {
    justify-content: center;
    align-items: center;
    height: 100vh;
+   color: #fff;
 }
 
 .banner-content-logo {
@@ -165,7 +166,7 @@ export default {
 
 /* start achievement section*/
 .achievement {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

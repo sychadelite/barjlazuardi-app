@@ -1,5 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
+.ripple:active:before {
+  -webkit-animation: ripple 1s ease;
+          animation: ripple 1s ease;
+}
+
+.ripple:hover:before {
+  -webkit-animation: ripple 1s ease;
+          animation: ripple 1s ease;
+}
+
+.ripple:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+@-webkit-keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 /* start scroll to top button styling */
 #btnScrollToTop {
   position: fixed;
@@ -46,6 +89,35 @@
 }
 
 /* end hamburger menu button styling */
+/* start swiper button styling */
+.swiper-button-next, .swiper-button-prev {
+  opacity: 0.6;
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: #7d2ae8;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+#btnNavigatorSlider {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #7d2ae8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#btnNavigatorSlider:active {
+  background: #6616d0;
+}
+
+/* end swiper button styling */
 /* start service card styling */
 .main-container {
   position: relative;
@@ -278,8 +350,9 @@ header.sticky ul li a:hover {
 }
 
 body {
-  background: #1F212C;
+  background: #041e1d;
   min-width: 100%;
+  overflow-x: hidden;
 }
 
 /* start layout styling */
