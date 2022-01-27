@@ -5458,6 +5458,168 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "SliderCard",
   components: {},
@@ -5593,6 +5755,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5620,13 +5802,6 @@ __webpack_require__.r(__webpack_exports__);
 
     var btnScrollToTop = document.querySelector("#btnScrollToTop");
     btnScrollToTop.addEventListener("click", function () {
-      // window.scrollTo(0, 0);
-      // plain javascript method
-      // window.scrollTo({
-      //     top: 0,
-      //     left: 0,
-      //     behavior: "smooth"
-      // });
       // jquery method
       jquery__WEBPACK_IMPORTED_MODULE_0___default()("html, body").animate({
         scrollTop: 0
@@ -10803,7 +10978,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slider-indicator {\r\n    margin-top: 20px;\n}\n.swiper {\r\n    width: 900px;\n}\n.slider-card .image {\r\n    height: 140px;\r\n    width: 140px;\r\n    border-radius: 50%;\r\n    padding: 3px;\r\n    background: #7d2ae8;\n}\n.slider-card .image img {\r\n    height: 100%;\r\n    width: 100%;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 50%;\r\n    border: 3px solid #fff;\n}\n.slider-card {\r\n    position: relative;\r\n    background: #fff;\r\n    border-radius: 20px;\r\n    margin: 20px 0;\r\n    width: 200px;\r\n    cursor: pointer;\n}\n.slider-card::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    height: 40%;\r\n    width: 100%;\r\n    background: #7d2ae8;\r\n    border-radius: 20px 20px 0 0;\n}\n.slider-card .slider-card-content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding: 30px;\r\n    position: relative;\r\n    z-index: 50;\n}\n.slider-card .media-icons {\r\n    position: absolute;\r\n    top: 10px;\r\n    right: 20px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.slider-card .media-icons i {\r\n    margin-top: 10px;\r\n    opacity: 0.6;\r\n    color: #fff;\r\n    transition: all 0.3s ease;\r\n    cursor: pointer;\n}\n.slider-card .media-icons i:hover {\r\n    opacity: 1;\n}\n.slider-card .name-achievement {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-top: 10px;\r\n    color: #333;\n}\n.name-achievement .name {\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n    text-align: center;\n}\n.name-achievement .year {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    text-align: center;\n}\n.slider-card .rating {\r\n    display: flex;\r\n    align-items: center;\r\n    margin-top: 18px;\n}\n.slider-card .rating i {\r\n    font-size: 18px;\r\n    margin: 0 2px;\r\n    color: #7d2ae8;\n}\n.slider-card .button {\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    margin-top: 20px;\n}\n.slider-card .button button {\r\n    background: #7d2ae8;\r\n    outline: none;\r\n    border: none;\r\n    color: #fff;\r\n    padding: 8px 22px;\r\n    border-radius: 20px;\r\n    font-size: 14px;\r\n    transition: all 0.3s ease;\r\n    cursor: pointer;\n}\n.button button:hover {\r\n    background: #6616d0;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.slider-indicator {\r\n    margin-top: 20px;\r\n    --swiper-theme-color: #6616d0;\n}\n.swiper {\r\n    width: 900px;\n}\n.slider-card .image {\r\n    height: 140px;\r\n    width: 140px;\r\n    border-radius: 50%;\r\n    padding: 3px;\r\n    background: #7d2ae8;\n}\n.slider-card .image img {\r\n    height: 100%;\r\n    width: 100%;\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    border-radius: 50%;\r\n    border: 3px solid #fff;\n}\n.slider-card {\r\n    position: relative;\r\n    background: #fff;\r\n    border-radius: 20px;\r\n    margin: 20px 0;\r\n    width: 200px;\r\n    cursor: pointer;\n}\n.slider-card::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    height: 40%;\r\n    width: 100%;\r\n    background: #7d2ae8;\r\n    border-radius: 20px 20px 0 0;\n}\n.slider-card .slider-card-content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding: 30px;\r\n    position: relative;\r\n    z-index: 50;\n}\n.slider-card .media-icons {\r\n    position: absolute;\r\n    top: 10px;\r\n    right: 20px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\n}\n.slider-card .media-icons i {\r\n    margin-top: 10px;\r\n    opacity: 0.6;\r\n    color: #fff;\r\n    transition: all 0.3s ease;\r\n    cursor: pointer;\n}\n.slider-card .media-icons i:hover {\r\n    opacity: 1;\n}\n.slider-card .name-achievement {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    margin-top: 10px;\r\n    color: #333;\n}\n.name-achievement .name {\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n    text-align: center;\n}\n.name-achievement .description {\r\n    font-size: 15px;\r\n    font-weight: 500;\r\n    text-align: center;\n}\n.slider-card .rating {\r\n    display: flex;\r\n    align-items: center;\r\n    margin-top: 18px;\n}\n.slider-card .rating i {\r\n    font-size: 18px;\r\n    margin: 0 2px;\r\n    color: #7d2ae8;\n}\n.slider-card .button {\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    margin-top: 20px;\n}\n.slider-card .button button {\r\n    background: #7d2ae8;\r\n    outline: none;\r\n    border: none;\r\n    color: #fff;\r\n    padding: 8px 22px;\r\n    border-radius: 20px;\r\n    font-size: 14px;\r\n    transition: all 0.3s ease;\r\n    cursor: pointer;\n}\n.button button:hover {\r\n    background: #6616d0;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10827,7 +11002,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* start banner section */\n.banner {\r\n   position: relative;\r\n   width: 100%;\r\n   height: 100vh;\r\n   background-image: url('/img/forest-05.webp');\r\n   background-size: cover;\n}\n.banner-content {\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   height: 100vh;\r\n   color: #fff;\n}\n.banner-content-logo {\r\n   display: block;\r\n   margin-left: auto;\r\n   margin-right: auto;\r\n   margin-bottom: 1rem;\r\n   transition: 0.2s;\n}\n.banner-content-logo:hover {\r\n   transform: scale(0.9);\r\n   cursor: pointer;\r\n   transition: 0.2s;\r\n   filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service section */\n.service-content {\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   color: #fff;\r\n   margin-bottom: 6.75rem;\r\n   margin-top: 6.75rem;\n}\n.service-content .sec-title {\r\n   text-align: center;\r\n   margin-bottom: 10px;\n}\n.service-content p {\r\n   text-align: center;\n}\r\n/* end service section */\r\n\r\n/* start achievement section*/\n.achievement {\r\n    min-height: 100vh;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: #041e1d;\n}\r\n/* end achievement section*/\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title {\r\n    text-align: center;\r\n   margin-bottom: 10px;\n}\n.section-content {\r\n    text-align: center;\r\n    color: #fff;\n}\n.section-content p {\r\n    margin-right: 1rem;\r\n    margin-left: 1rem;\n}\r\n\r\n/* start banner section */\n.banner {\r\n   position: relative;\r\n   width: 100%;\r\n   height: 120vh;\r\n   background-image: url('/img/forest-05.webp');\r\n   background-size: cover;\n}\n.banner-content {\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   height: 100vh;\r\n   color: #fff;\n}\n.banner-content-logo {\r\n   display: block;\r\n   margin-left: auto;\r\n   margin-right: auto;\r\n   margin-bottom: 1rem;\r\n   transition: 0.2s;\n}\n.banner-content-logo:hover {\r\n   transform: scale(0.9);\r\n   cursor: pointer;\r\n   transition: 0.2s;\r\n   filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service & achievement section */\n.achievement-content,\r\n.service-content {\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   /* min-height: 100vh; */\r\n   margin-bottom: 6.75rem;\r\n   margin-top: 6.75rem;\n}\r\n/* end service & achievement section */\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40193,7 +40368,7 @@ var render = function () {
               },
             },
           },
-          [_vm._v("About")]
+          [_vm._v("Portofolio")]
         ),
         _vm._v(" "),
         _c(
@@ -40241,7 +40416,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", { staticClass: "nav-item" }, [
         _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-          _vm._v("About"),
+          _vm._v("Portofolio"),
         ]),
       ]),
       _vm._v(" "),
@@ -40344,82 +40519,345 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "swiper mySwiper container" }, [
-    _c(
-      "div",
-      { staticClass: "swiper-wrapper content" },
-      _vm._l(18, function (index) {
-        return _c(
-          "div",
-          { key: index, staticClass: "swiper-slide slider-card" },
-          [_vm._m(0, true)]
-        )
-      }),
-      0
-    ),
-    _vm._v(" "),
-    _vm._m(1),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "slider-card-content" }, [
-      _c("div", { staticClass: "image" }, [
-        _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+    return _c("div", { staticClass: "swiper mySwiper container" }, [
+      _c("div", { staticClass: "swiper-wrapper content" }, [
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous666")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v("website keren, inovatif, informatif dan berguna."),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous667")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v(
+                  "website mantap, suka banget, desainnya keren dan ga ngebosenin."
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous668")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v("website sampah, sok ngide, cacat dan ngelag."),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous669")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v(
+                  "국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다."
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous670")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v(
+                  "जैसी ध्वनि संस्थान मर्यादित विस्तरणक्षमता बदले मुख्यतह विश्लेषण"
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous671")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v("判行座再規掲障者続保第載宮両経局堀中構。"),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slider-card" }, [
+          _c("div", { staticClass: "slider-card-content" }, [
+            _c("div", { staticClass: "image" }, [
+              _c("img", { attrs: { src: "/img/horvat.webp", alt: "horvat" } }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "media-icons" }, [
+              _c("i", { staticClass: "fab fa-facebook" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-github" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fab fa-twitter" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "name-achievement" }, [
+              _c("span", { staticClass: "name" }, [_vm._v("Anoymous672")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "description" }, [
+                _vm._v(
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, beatae laborum."
+                ),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "rating" }, [
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "fas fa-star" }),
+              _vm._v(" "),
+              _c("i", { staticClass: "far fa-star" }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "button" }, [
+              _c("button", { staticClass: "btn-about-me" }, [
+                _vm._v("Explore"),
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
+            ]),
+          ]),
+        ]),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "media-icons" }, [
-        _c("i", { staticClass: "fab fa-facebook" }),
+      _c("div", { staticClass: "slider-indicator" }, [
+        _c("div", {
+          staticClass: "swiper-button-next ripple",
+          attrs: { id: "btnNavigatorSlider" },
+        }),
         _vm._v(" "),
-        _c("i", { staticClass: "fab fa-github" }),
+        _c("div", {
+          staticClass: "swiper-button-prev ripple",
+          attrs: { id: "btnNavigatorSlider" },
+        }),
         _vm._v(" "),
-        _c("i", { staticClass: "fab fa-twitter" }),
+        _c("div", { staticClass: "swiper-pagination" }),
       ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "name-achievement" }, [
-        _c("span", { staticClass: "name" }, [_vm._v("Crazy Rich Perum")]),
-        _vm._v(" "),
-        _c("span", { staticClass: "year" }, [_vm._v("2022")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "rating" }, [
-        _c("i", { staticClass: "fas fa-star" }),
-        _vm._v(" "),
-        _c("i", { staticClass: "fas fa-star" }),
-        _vm._v(" "),
-        _c("i", { staticClass: "fas fa-star" }),
-        _vm._v(" "),
-        _c("i", { staticClass: "far fa-star" }),
-        _vm._v(" "),
-        _c("i", { staticClass: "far fa-star" }),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "button" }, [
-        _c("button", { staticClass: "btn-about-me" }, [_vm._v("Explore")]),
-        _vm._v(" "),
-        _c("button", { staticClass: "btn-vote-me" }, [_vm._v("Vote")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "slider-indicator" }, [
-      _c("div", {
-        staticClass: "swiper-button-next ripple",
-        attrs: { id: "btnNavigatorSlider" },
-      }),
-      _vm._v(" "),
-      _c("div", {
-        staticClass: "swiper-button-prev ripple",
-        attrs: { id: "btnNavigatorSlider" },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "swiper-pagination" }),
     ])
   },
 ]
@@ -40461,7 +40899,7 @@ var render = function () {
               "div",
               { staticClass: "row" },
               [
-                _vm._l(2, function (index) {
+                _vm._l(1, function (index) {
                   return _c(
                     "div",
                     { key: index, staticClass: "column" },
@@ -40471,6 +40909,8 @@ var render = function () {
                 }),
                 _vm._v(" "),
                 _vm._m(2),
+                _vm._v(" "),
+                _vm._m(3),
               ],
               2
             ),
@@ -40482,13 +40922,20 @@ var render = function () {
         "section",
         { staticClass: "achievement", attrs: { id: "achievement" } },
         [
+          _vm._m(4),
+          _vm._v(" "),
           _c("div", { staticClass: "achievement-content" }, [
-            _c("div", [_c("SliderCard")], 1),
+            _c(
+              "div",
+              { staticStyle: { "margin-top": "-2.25rem" } },
+              [_c("SliderCard")],
+              1
+            ),
           ]),
         ]
       ),
       _vm._v(" "),
-      _vm._m(3),
+      _vm._m(5),
     ],
     1
   )
@@ -40521,8 +40968,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticStyle: { "margin-bottom": "2.25rem" } }, [
-      _c("div", { staticStyle: { "text-align": "center" } }, [
-        _c("h1", { staticClass: "sec-title" }, [_vm._v("Our Services")]),
+      _c("div", { staticClass: "section-content" }, [
+        _c("h1", { staticClass: "section-title" }, [_vm._v("Our Services")]),
         _vm._v(" "),
         _c("p", [
           _vm._v(
@@ -40568,6 +41015,61 @@ var staticRenderFns = [
             ]),
           ]),
         ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "main-container" }, [
+        _c("div", { staticClass: "info" }, [
+          _c("div", [
+            _c("p", { attrs: { id: "name" } }, [_vm._v("Idham Faidzi")]),
+            _vm._v(" "),
+            _c("p", { attrs: { id: "job" } }, [_vm._v("Manager")]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "links" }, [
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-instagram",
+                attrs: { aria_hidden: "true" },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-github",
+                attrs: { aria_hidden: "true" },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("i", {
+                staticClass: "fab fa-whatsapp",
+                attrs: { aria_hidden: "true" },
+              }),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "section-content" }, [
+      _c("h1", { staticClass: "section-title" }, [
+        _vm._v("Customer Satisfaction"),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae."
+        ),
       ]),
     ])
   },

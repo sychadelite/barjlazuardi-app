@@ -3,7 +3,7 @@
     <a href="#" class="logo">Buzz</a>
     <ul class="nav-menu">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Portofolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
     </ul>
@@ -16,7 +16,7 @@
         <a href="javascript:void(0)" class="closebtn" @click.prevent="closeNav()">&times;</a>
         <div class="overlay-content">
             <a @click.prevent="closeNav()" class="" href="#">Home</a>
-            <a @click.prevent="closeNav()" class="" href="#">About</a>
+            <a @click.prevent="closeNav()" class="" href="#">Portofolio</a>
             <a @click.prevent="closeNav()" class="" href="#">Features</a>
             <a @click.prevent="closeNav()" class="" href="#">Profile</a>
         </div>

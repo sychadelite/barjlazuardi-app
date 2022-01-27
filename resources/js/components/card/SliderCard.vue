@@ -1,7 +1,7 @@
 <template>
     <div class="swiper mySwiper container">
         <div class="swiper-wrapper content">
-            <div class="swiper-slide slider-card" v-for='index in 18' :key='index'>
+            <div class="swiper-slide slider-card">
                 <div class="slider-card-content">
                     <div class="image">
                         <img src="/img/horvat.webp" alt="horvat">
@@ -12,14 +12,176 @@
                         <i class="fab fa-twitter"></i>
                     </div>
                     <div class="name-achievement">
-                        <span class="name">Crazy Rich Perum</span>
-                        <span class="year">2022</span>
+                        <span class="name">Anoymous666</span>
+                        <span class="description">website keren, inovatif, informatif dan berguna.</span>
                     </div>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous667</span>
+                        <span class="description">website mantap, suka banget, desainnya keren dan ga ngebosenin.</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous668</span>
+                        <span class="description">website sampah, sok ngide, cacat dan ngelag.</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous669</span>
+                        <span class="description">국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다.</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous670</span>
+                        <span class="description">जैसी ध्वनि संस्थान मर्यादित विस्तरणक्षमता बदले मुख्यतह विश्लेषण</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous671</span>
+                        <span class="description">判行座再規掲障者続保第載宮両経局堀中構。</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="button">
+                        <button class="btn-about-me">Explore</button>
+                        <button class="btn-vote-me">Vote</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slider-card">
+                <div class="slider-card-content">
+                    <div class="image">
+                        <img src="/img/horvat.webp" alt="horvat">
+                    </div>
+                    <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="name-achievement">
+                        <span class="name">Anoymous672</span>
+                        <span class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, beatae laborum.</span>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
                     <div class="button">
@@ -95,6 +257,7 @@ export default {
 <style>
 .slider-indicator {
     margin-top: 20px;
+    --swiper-theme-color: #6616d0;
 }
 .swiper {
     width: 900px;
@@ -167,7 +330,7 @@ export default {
     font-weight: 600;
     text-align: center;
 }
-.name-achievement .year {
+.name-achievement .description {
     font-size: 15px;
     font-weight: 500;
     text-align: center;
