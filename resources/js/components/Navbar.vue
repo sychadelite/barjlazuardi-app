@@ -1,6 +1,9 @@
 <template>
 <header id="navbar" class="topnav">
-    <a href="#" class="logo">Buzz</a>
+    <a href="#" class="logo">
+        <img src="/icon/buzz-form-toys-story.svg" class="logo-icon" alt="logo" width="60" height="50" style="margin-right: 20px;">
+        <p class="logo-text">Buzz</p>
+    </a>
     <ul class="nav-menu">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Portofolio</a></li>
@@ -42,7 +45,7 @@ export default {
                 h.style.display = "block";
             }
         }
-        var s = window.matchMedia("(min-width: 601px)")
+        var s = window.matchMedia("(min-width: 621px)")
         
         hideMyLinks(s)                                                  // Call listener function at run time
         s.addListener(hideMyLinks)                                      // Attach listener function on state changes

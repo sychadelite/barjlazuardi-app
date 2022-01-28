@@ -5325,6 +5325,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
@@ -5343,7 +5346,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
 
-    var s = window.matchMedia("(min-width: 601px)");
+    var s = window.matchMedia("(min-width: 621px)");
     hideMyLinks(s); // Call listener function at run time
 
     s.addListener(hideMyLinks); // Attach listener function on state changes
@@ -40298,9 +40301,9 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("header", { staticClass: "topnav", attrs: { id: "navbar" } }, [
-    _c("a", { staticClass: "logo", attrs: { href: "#" } }, [_vm._v("Buzz")]),
-    _vm._v(" "),
     _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
     _vm._v(" "),
     _c(
       "button",
@@ -40403,6 +40406,25 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "logo", attrs: { href: "#" } }, [
+      _c("img", {
+        staticClass: "logo-icon",
+        staticStyle: { "margin-right": "20px" },
+        attrs: {
+          src: "/icon/buzz-form-toys-story.svg",
+          alt: "logo",
+          width: "60",
+          height: "50",
+        },
+      }),
+      _vm._v(" "),
+      _c("p", { staticClass: "logo-text" }, [_vm._v("Buzz")]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement

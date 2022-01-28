@@ -273,6 +273,13 @@ header .logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.6s;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
 }
 
 header ul {
@@ -410,7 +417,7 @@ img {
     max-width: 50%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   .column {
     flex: 100%;
@@ -451,6 +458,10 @@ img {
   header .logo {
     margin-left: -80px;
     transition: 0.6s;
+  }
+
+  .logo .logo-text {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
