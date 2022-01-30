@@ -5377,18 +5377,21 @@ __webpack_require__.r(__webpack_exports__);
         name: 'Portofolio',
         params: {}
       });
+      this.closeNav();
     },
     toLandingPage: function toLandingPage() {
       this.$router.push({
         name: 'LandingPage',
         params: {}
       });
+      this.closeNav();
     },
     toProfile: function toProfile() {
       this.$router.push({
         name: 'Profile',
         params: {}
       });
+      this.closeNav();
     }
   }
 });
@@ -40610,11 +40613,16 @@ var render = function () {
           "a",
           {
             staticClass: "nav-link",
+            class: {
+              "nav-menu-active":
+                _vm.$route.fullPath === "/welcome" ||
+                _vm.$route.fullPath === "/welcome",
+            },
             attrs: { href: "#" },
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.closeNav()
+                return _vm.toLandingPage()
               },
             },
           },
@@ -40625,11 +40633,16 @@ var render = function () {
           "a",
           {
             staticClass: "nav-link",
+            class: {
+              "nav-menu-active":
+                _vm.$route.fullPath === "/portofolio" ||
+                _vm.$route.fullPath === "/portofolio",
+            },
             attrs: { href: "#" },
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.closeNav()
+                return _vm.toPortofolio()
               },
             },
           },
@@ -40655,11 +40668,16 @@ var render = function () {
           "a",
           {
             staticClass: "nav-link",
+            class: {
+              "nav-menu-active":
+                _vm.$route.fullPath === "/profile" ||
+                _vm.$route.fullPath === "/profile",
+            },
             attrs: { href: "#" },
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.closeNav()
+                return _vm.toProfile()
               },
             },
           },
