@@ -18,11 +18,11 @@
 
     <div id="app">
         <main>
+            <navbar-component></navbar-component>
             <router-view></router-view>
             <!-- <footer-component></footer-component> -->
             <example-component></example-component>
         </main>
-
     </div>
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script> -->

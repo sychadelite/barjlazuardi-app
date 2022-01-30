@@ -5,10 +5,10 @@
         <p class="logo-text">Buzz</p>
     </a>
     <ul class="nav-menu">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Portofolio</a></li>
+        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/welcome' || $route.fullPath === '/welcome'}" @click.prevent="toLandingPage()">Home</a></li>
+        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/portofolio' || $route.fullPath === '/portofolio'}" @click.prevent="toPortofolio()">Portofolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/profile' || $route.fullPath === '/profile'}" @click.prevent="toProfile()">Profile</a></li>
     </ul>
 
     <button id="btnHamburgerMenu" class="hamburger" @click.prevent="openNav()" href="javascript:void(0);">
@@ -18,10 +18,10 @@
     <div id="myLinks" class="overlay">
         <a href="javascript:void(0)" class="closebtn" @click.prevent="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a @click.prevent="closeNav()" class="" href="#">Home</a>
-            <a @click.prevent="closeNav()" class="" href="#">Portofolio</a>
-            <a @click.prevent="closeNav()" class="" href="#">Features</a>
-            <a @click.prevent="closeNav()" class="" href="#">Profile</a>
+            <a class="nav-link" @click.prevent="closeNav()" href="#">Home</a>
+            <a class="nav-link" @click.prevent="closeNav()" href="#">Portofolio</a>
+            <a class="nav-link" @click.prevent="closeNav()" href="#">Features</a>
+            <a class="nav-link" @click.prevent="closeNav()" href="#">Profile</a>
         </div>
     </div>
 </header>
@@ -70,7 +70,25 @@ export default {
             var h = document.getElementById("btnHamburgerMenu");
             x.style.width = "0%";
             h.style.display = "block";
-        }
+        },
+        toPortofolio() {                      
+            this.$router.push({
+                name: 'Portofolio',
+                params: {}
+            })
+        },
+        toLandingPage() {                      
+            this.$router.push({
+                name: 'LandingPage',
+                params: {}
+            })
+        },
+        toProfile() {                      
+            this.$router.push({
+                name: 'Profile',
+                params: {}
+            })
+        },
     }
 }
 </script>

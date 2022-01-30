@@ -1,7 +1,6 @@
 <template>
     <!-- start banner section -->
     <div>
-        <Navbar/>
         <section id="banner" class="banner">
         <div class="banner-content">
             <div>
@@ -88,15 +87,16 @@
 
 <script type="text/javascript">
 import $ from 'jquery'
-import Navbar from '../components/Navbar.vue'
 import HoverCard from '../components/card/HoverCard.vue'
 import SliderCard from '../components/card/SliderCard.vue'
 
 export default {
     components: {
-        Navbar, HoverCard, SliderCard
+        HoverCard, SliderCard
     },
     mounted() {
+        // this.scrollToTop()
+
         // show/hide scroll to top button
         var previousScroll = 0;
         $(window).scroll(function(event){
@@ -116,6 +116,11 @@ export default {
             // jquery method
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
+    },
+    methods: {
+        scrollToTop() {
+            window.scrollTo(0,0);
+        },
     }
 }
 </script>

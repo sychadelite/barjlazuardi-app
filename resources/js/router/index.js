@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 
 const LandingPage = require('../pages/LandingPage.vue').default
 const Portofolio = require('../pages/Portofolio.vue').default
+const Profile = require('../pages/Profile.vue').default
 
 import NotFound from '../pages/NotFound.vue'
 
@@ -23,13 +24,19 @@ const routes = [
         props: true
     },
     {
+        name: 'Profile',
+        path: '/profile',
+        component: Profile,
+        props: true
+    },
+    {
         path: '*',
         component: NotFound
     }
 ]
 
 const router = new VueRouter({
-    linkActiveClass: 'active',
+    // linkActiveClass: 'nav-menu-active',
     mode: 'history',
     routes
 })
