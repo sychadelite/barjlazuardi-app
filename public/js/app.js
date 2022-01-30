@@ -5367,17 +5367,15 @@ __webpack_require__.r(__webpack_exports__);
       h.style.display = "none";
     },
     closeNav: function closeNav() {
+      var x = document.getElementById("myLinks"); // var h = document.getElementById("btnHamburgerMenu");
+
+      x.style.width = "0%"; // h.style.display = "block";
+    },
+    closeNavByOverlay: function closeNavByOverlay() {
       var x = document.getElementById("myLinks");
       var h = document.getElementById("btnHamburgerMenu");
       x.style.width = "0%";
       h.style.display = "block";
-    },
-    toPortofolio: function toPortofolio() {
-      this.$router.push({
-        name: 'Portofolio',
-        params: {}
-      });
-      this.closeNav();
     },
     toLandingPage: function toLandingPage() {
       this.$router.push({
@@ -5386,12 +5384,40 @@ __webpack_require__.r(__webpack_exports__);
       });
       this.closeNav();
     },
+    toLandingPageByOverlay: function toLandingPageByOverlay() {
+      this.$router.push({
+        name: 'LandingPage',
+        params: {}
+      });
+      this.closeNavByOverlay();
+    },
+    toPortofolio: function toPortofolio() {
+      this.$router.push({
+        name: 'Portofolio',
+        params: {}
+      });
+      this.closeNav();
+    },
+    toPortofolioByOverlay: function toPortofolioByOverlay() {
+      this.$router.push({
+        name: 'Portofolio',
+        params: {}
+      });
+      this.closeNavByOverlay();
+    },
     toProfile: function toProfile() {
       this.$router.push({
         name: 'Profile',
         params: {}
       });
       this.closeNav();
+    },
+    toProfileByOverlay: function toProfileByOverlay() {
+      this.$router.push({
+        name: 'Profile',
+        params: {}
+      });
+      this.closeNavByOverlay();
     }
   }
 });
@@ -40601,7 +40627,7 @@ var render = function () {
           on: {
             click: function ($event) {
               $event.preventDefault()
-              return _vm.closeNav()
+              return _vm.closeNavByOverlay()
             },
           },
         },
@@ -40622,7 +40648,7 @@ var render = function () {
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.toLandingPage()
+                return _vm.toLandingPageByOverlay()
               },
             },
           },
@@ -40642,27 +40668,16 @@ var render = function () {
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.toPortofolio()
+                return _vm.toPortofolioByOverlay()
               },
             },
           },
           [_vm._v("Portofolio")]
         ),
         _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticClass: "nav-link",
-            attrs: { href: "#" },
-            on: {
-              click: function ($event) {
-                $event.preventDefault()
-                return _vm.closeNav()
-              },
-            },
-          },
-          [_vm._v("Features")]
-        ),
+        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+          _vm._v("Features"),
+        ]),
         _vm._v(" "),
         _c(
           "a",
@@ -40677,7 +40692,7 @@ var render = function () {
             on: {
               click: function ($event) {
                 $event.preventDefault()
-                return _vm.toProfile()
+                return _vm.toProfileByOverlay()
               },
             },
           },
