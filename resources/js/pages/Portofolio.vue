@@ -1,6 +1,7 @@
 <template>
-    <div style="height: 140vh;">
-        <h1 style="height: 140vh; color: #fff; margin: auto; text-align: center; margin-top: 25%;">Ini Portofolio</h1>
+    <div style="min-height: 140vh; color: #fff; margin: auto; text-align: center; margin-top: 15%;">
+        <h1>Ini Portofolio</h1>
+        <p>My name is Mohammad Barj Lazuardi Dindashwara</p>
     </div>
 </template>
 

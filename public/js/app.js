@@ -5881,6 +5881,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   setup: function setup() {},
@@ -5913,20 +5914,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   data: function data() {
     return {
-      randomName: null
+      randomName: null,
+      randomCountry: {
+        capital: null,
+        language: null,
+        nationality: null
+      },
+      randomImage: {
+        gender: '',
+        email: '',
+        picture: {
+          large: ''
+        }
+      }
     };
   },
   setup: function setup() {},
   mounted: function mounted() {
     // this.scrollToTop()
-    this.getPublicIp();
+    this.getRandomName(), this.getRandomCountry(), this.getRandomImage();
   },
   methods: {
-    getPublicIp: function getPublicIp() {
+    getRandomName: function getRandomName() {
       var _this = this;
 
       axios.get('https://random-data-api.com/api/name/random_name').then(function (response) {
@@ -5935,6 +5956,22 @@ __webpack_require__.r(__webpack_exports__);
       }); // fetch('https://random-data-api.com/api/blood/random_blood')
       // .then(response => response.json())
       // .then(data => console.log(data));
+    },
+    getRandomCountry: function getRandomCountry() {
+      var _this2 = this;
+
+      axios.get('https://random-data-api.com/api/nation/random_nation').then(function (response) {
+        console.log(response.data);
+        _this2.randomCountry = response.data;
+      });
+    },
+    getRandomImage: function getRandomImage() {
+      var _this3 = this;
+
+      axios.get('https://randomuser.me/api/').then(function (response) {
+        console.log(response.data.results[0]);
+        _this3.randomImage = response.data.results[0];
+      });
     },
     scrollToTop: function scrollToTop() {
       window.scrollTo(0, 0);
@@ -41453,21 +41490,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticStyle: { height: "140vh" } }, [
-      _c(
-        "h1",
-        {
-          staticStyle: {
-            height: "140vh",
-            color: "#fff",
-            margin: "auto",
-            "text-align": "center",
-            "margin-top": "25%",
-          },
+    return _c(
+      "div",
+      {
+        staticStyle: {
+          "min-height": "140vh",
+          color: "#fff",
+          margin: "auto",
+          "text-align": "center",
+          "margin-top": "15%",
         },
-        [_vm._v("Ini Portofolio")]
-      ),
-    ])
+      },
+      [
+        _c("h1", [_vm._v("Ini Portofolio")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("My name is Mohammad Barj Lazuardi Dindashwara")]),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -41496,18 +41535,52 @@ var render = function () {
     "div",
     {
       staticStyle: {
-        height: "140vh",
+        "min-height": "140vh",
         color: "#fff",
         margin: "auto",
         "text-align": "center",
-        "justify-content": "center",
-        "margin-top": "25%",
+        "margin-top": "15%",
       },
     },
     [
       _c("h1", [_vm._v("Ini Profile")]),
       _vm._v(" "),
-      _c("p", [_vm._v("Your Random Name: " + _vm._s(_vm.randomName))]),
+      _c("div", [
+        _c("img", {
+          staticClass: "rounded-circle center-cropped avatar",
+          attrs: { src: _vm.randomImage.picture.large, alt: "Image API" },
+        }),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Name: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomName))]),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Email: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomImage.email))]),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Gender: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomImage.gender))]),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Capital: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomCountry.capital))]),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Language: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomCountry.language))]),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Nations: "),
+          _c("strong", [_vm._v(_vm._s(_vm.randomCountry.nationality))]),
+        ]),
+      ]),
     ]
   )
 }
