@@ -1,13 +1,13 @@
 <template>
 <header id="navbar" class="topnav">
     <a href="#" class="logo">
-        <img src="/icon/buzz-form-toys-story.svg" class="logo-icon" alt="logo" width="60" height="50" style="margin-right: 20px;">
+        <img src="/icon/buzz-form-toys-story.svg" class="logo-icon animate__animated animate__pulse animate__infinite" alt="logo" width="60" height="50" style="margin-right: 20px;">
         <p class="logo-text">Buzz</p>
     </a>
     <ul class="nav-menu">
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/welcome' || $route.fullPath === '/welcome'}" @click.prevent="toLandingPage()">Home</a></li>
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/portofolio' || $route.fullPath === '/portofolio'}" @click.prevent="toPortofolio()">Portofolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/features' || $route.fullPath === '/features'}" @click.prevent="toFeatures()">Features</a></li>
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/profile' || $route.fullPath === '/profile'}" @click.prevent="toProfile()">Profile</a></li>
     </ul>
 
@@ -20,7 +20,7 @@
         <div class="overlay-content">
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/welcome' || $route.fullPath === '/welcome'}" @click.prevent="toLandingPageByOverlay()" href="#">Home</a>
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/portofolio' || $route.fullPath === '/portofolio'}" @click.prevent="toPortofolioByOverlay()" href="#">Portofolio</a>
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/features' || $route.fullPath === '/features'}" @click.prevent="toFeaturesByOverlay()" href="#">Features</a>
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/profile' || $route.fullPath === '/profile'}" @click.prevent="toProfileByOverlay()" href="#">Profile</a>
         </div>
     </div>
@@ -98,9 +98,23 @@ export default {
             })
             this.closeNav();
         },
+        toFeatures() {                      
+            this.$router.push({
+                name: 'Features',
+                params: {}
+            })
+            this.closeNav();
+        },
         toPortofolioByOverlay() {                      
             this.$router.push({
                 name: 'Portofolio',
+                params: {}
+            })
+            this.closeNavByOverlay();
+        },
+        toFeaturesByOverlay() {                      
+            this.$router.push({
+                name: 'Features',
                 params: {}
             })
             this.closeNavByOverlay();

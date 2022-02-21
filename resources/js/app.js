@@ -3,6 +3,8 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 import router from './router'
 
+import swal from 'sweetalert';
+
 Vue.component('navbar-component', require('./components/Navbar.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 

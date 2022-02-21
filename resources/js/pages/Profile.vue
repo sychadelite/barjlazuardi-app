@@ -1,19 +1,25 @@
 <template>
-    <div style="min-height: 140vh; color: #fff; margin: auto; text-align: center; margin-top: 15%;">
-        <h1>Ini Profile</h1>  
+    <div class="dummy-content">
         <div>
-            <img class="rounded-circle center-cropped avatar" :src="randomImage.picture.large" alt="Image API">
-            <p>Name: <strong>{{ randomName }}</strong></p>
-            <p>Email: <strong>{{ randomImage.email }}</strong></p>
-            <p>Gender: <strong>{{ randomImage.gender }}</strong></p>
-            <p>Capital: <strong>{{ randomCountry.capital }}</strong></p>
-            <p>Language: <strong>{{ randomCountry.language }}</strong></p>
-            <p>Nations: <strong>{{ randomCountry.nationality }}</strong></p>
+            <h1 class="animate__animated animate__bounce">Ini Profile</h1>  
+            <div>
+                <object data="http://stackoverflow.com/does-not-exist.png" type="image/png">
+                    <img class="rounded-circle center-cropped avatar animate__animated animate__rotateIn" style="--animate-duration: 2s;" :src="randomImage.picture.large" alt="Image API">
+                </object>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Name: <strong>{{ randomName }}</strong></p>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Email: <strong>{{ randomImage.email }}</strong></p>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Gender: <strong>{{ randomImage.gender }}</strong></p>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Capital: <strong>{{ randomCountry.capital }}</strong></p>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Language: <strong>{{ randomCountry.language }}</strong></p>
+                <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Nations: <strong>{{ randomCountry.nationality }}</strong></p>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
     components: {
 
@@ -75,3 +81,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.some-class {
+    font-weight: 700;
+}
+</style>

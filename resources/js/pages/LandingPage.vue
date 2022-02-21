@@ -97,6 +97,25 @@ export default {
     mounted() {
         // this.scrollToTop()
 
+        swal({
+            title: "Sorry mate, my website isn't completed yet",
+            text: "Regarding design or features, currently still under development.",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            })
+            .then((willDelete) => {
+            if (willDelete) {
+                swal("Poof! Your imaginary file has been deleted!", {
+                    icon: "success",
+                });
+            } else {
+                swal("Thank you for your understanding");
+            }
+        });
+
         // show/hide scroll to top button
         var previousScroll = 0;
         $(window).scroll(function(event){

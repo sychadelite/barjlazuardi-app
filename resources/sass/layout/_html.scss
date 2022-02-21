@@ -11,6 +11,18 @@
     color: #333;
 }
 
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background: $base-dark;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: $base-yellow;
+}
+
 body {
     background: $base-dark;
     min-width: 100%;

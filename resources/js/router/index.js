@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 
 const LandingPage = require('../pages/LandingPage.vue').default
 const Portofolio = require('../pages/Portofolio.vue').default
+const Features = require('../pages/Features.vue').default
 const Profile = require('../pages/Profile.vue').default
 
 import NotFound from '../pages/NotFound.vue'
@@ -21,6 +22,12 @@ const routes = [
         name: 'Portofolio',
         path: '/portofolio',
         component: Portofolio,
+        props: true
+    },
+    {
+        name: 'Features',
+        path: '/features',
+        component: Features,
         props: true
     },
     {

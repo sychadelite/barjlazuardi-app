@@ -118,6 +118,25 @@
 }
 
 /* end swiper button styling */
+/* start global button element styling */
+.btn-gen-1 {
+  all: unset;
+  background-color: #2C5BFF;
+  min-width: 100px;
+  color: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-gen-1:hover {
+  background-color: #f9ca24;
+  color: #041e1d;
+}
+
+/* end global button element styling */
 /* start service card styling */
 .main-container {
   position: relative;
@@ -390,6 +409,18 @@ header.sticky ul li a:hover {
 *::selection {
   background: #f9ca24;
   color: #333;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #041e1d;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #f9ca24;
 }
 
 body {

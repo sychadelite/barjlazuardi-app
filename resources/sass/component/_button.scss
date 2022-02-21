@@ -69,3 +69,21 @@
     background: #6616d0;
 }
 /* end swiper button styling */
+
+/* start global button element styling */
+.btn-gen-1 {
+    all: unset;
+    background-color: $base-blue;
+    min-width: 100px;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-gen-1:hover {
+    background-color: $base-yellow;
+    color: $base-dark;
+}
+/* end global button element styling */

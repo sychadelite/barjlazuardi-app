@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Link Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Base CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <title>Barjlazuardi | Welcome</title>
@@ -20,8 +22,7 @@
         <main>
             <navbar-component></navbar-component>
             <router-view></router-view>
-            <!-- <footer-component></footer-component> -->
-            <example-component></example-component>
+            <!-- <example-component></example-component> -->
         </main>
     </div>
 
