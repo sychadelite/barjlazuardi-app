@@ -11,7 +11,11 @@
     color: #333;
 }
 
-html::-webkit-scrollbar{
+*::after, *::before {
+  box-sizing: border-box
+}
+
+html::-webkit-scrollbar {
     width: 10px;
 }
 

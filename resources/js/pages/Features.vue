@@ -1,9 +1,34 @@
 <template>
-    <div class="dummy-content">
-        <div>
-            <h1 class="animate__animated animate__backInDown" style="margin-bottom: 10px;">Movie Search</h1>
-            <button class="btn-gen-1" @click.prevent="swalGetMovie()">Try it !</button>
-        </div>
+    <div>
+        <section class="dummy-section">
+            <div class="dummy-content">
+                <h1 class="animate__animated animate__backInDown" style="margin-bottom: 10px;">Movie Search</h1>
+                <button class="btn-fun shrink-border" @click.prevent="swalGetMovie()">Try it !</button>
+            </div>
+        </section>
+        <section class="dummy-section">
+            <div class="dummy-content row">
+                <div class="column">
+                    <h2>Button Gen</h2>
+                    <div>
+                        <button class="btn-gen btn-gen-1">btn-gen-1</button>
+                        <button class="btn-gen btn-gen-2">btn-gen-2</button>
+                        <button class="btn-gen btn-gen-3">btn-gen-3</button>
+                        <button class="btn-gen btn-gen-4">btn-gen-4</button>
+                        <button class="btn-gen btn-gen-5">btn-gen-5</button>
+                        <button class="btn-gen btn-gen-6">btn-gen-6</button>
+                        <button class="btn-gen btn-gen-7">btn-gen-7</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2>Button Fun</h2>
+                    <div class="">
+                        <button class="btn-fun shrink-border">Ostentiferous</button>
+                        <button class="btn-fun material-bubble">Xenization</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 

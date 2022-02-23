@@ -1,6 +1,6 @@
 <template>
-    <div class="dummy-content">
-        <div>
+    <div class="dummy-section">
+        <div class="dummy-content">
             <h1 class="animate__animated animate__bounce">Ini Profile</h1>  
             <div>
                 <object data="http://stackoverflow.com/does-not-exist.png" type="image/png">

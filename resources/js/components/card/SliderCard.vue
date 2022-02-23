@@ -256,8 +256,10 @@ export default {
 
 <style>
 .slider-indicator {
-    margin-top: 20px;
     --swiper-theme-color: #6616d0;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -5px;
 }
 .swiper {
     width: 900px;

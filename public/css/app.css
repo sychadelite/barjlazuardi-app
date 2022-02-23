@@ -43,6 +43,10 @@
     opacity: 0;
   }
 }
+/* useful resources 
+https://www.sliderrevolution.com/resources/css-button-hover-effects/
+https://ianlunn.github.io/Hover/ 
+*/
 /* start scroll to top button styling */
 #btnScrollToTop {
   position: fixed;
@@ -118,22 +122,200 @@
 }
 
 /* end swiper button styling */
-/* start global button element styling */
-.btn-gen-1 {
+/* start global button gen element styling */
+.btn-normal {
   all: unset;
   background-color: #2C5BFF;
   min-width: 100px;
   color: #FFF;
   padding: 10px;
+  margin: 10px 10px;
   border-radius: 10px;
   transition: 0.3s;
   font-weight: 600;
   cursor: pointer;
 }
 
-.btn-gen-1:hover {
+.btn-normal:hover {
   background-color: #f9ca24;
   color: #041e1d;
+}
+
+.btn-gen {
+  position: relative;
+  border: none;
+  text-transform: uppercase;
+  min-width: 100px;
+  font-weight: 600;
+  transition: 0.4s ease-in;
+  z-index: 1;
+  margin: 10px 10px;
+  background-color: #343A40;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.btn-gen-1:hover {
+  box-shadow: inset -4.5em 0 0 0 #ff96ad, inset 4.5em 0 0 0 #ff96ad;
+  transition-duration: 0.6s;
+}
+
+.btn-gen-2:hover {
+  box-shadow: inset 0 -40px 0 0 #ff96ad;
+  transition-duration: 0.6s;
+}
+
+.btn-gen-3:hover {
+  box-shadow: inset 0 -1.5em 0 0 #ff96ad, inset 0 1.5em 0 0 #ff96ad;
+  transition-duration: 0.6s;
+}
+
+.btn-gen-4:hover {
+  background: #ff96ad;
+  box-shadow: 0 0 2.5px #ff96ad, 0 0 12.5px #ff96ad, 0 0 25px #ff96ad, 0 0 100px #ff96ad;
+}
+
+.btn-gen-5:hover {
+  box-shadow: 10px 10px 0px #ff96ad;
+  top: -5px;
+  left: -5px;
+}
+
+.btn-gen-6:hover {
+  background-image: linear-gradient(to right, #E7484F, #E7484F 16.65%, #F68B1D 16.65%, #F68B1D 33.3%, #FCED00 33.3%, #FCED00 49.95%, #009E4F 49.95%, #009E4F 66.6%, #00AAC3 66.6%, #00AAC3 83.25%, #732982 83.25%, #732982 100%, #E7484F 100%);
+  -webkit-animation: slidebg 3s linear infinite;
+          animation: slidebg 3s linear infinite;
+  color: #FFF;
+}
+
+@-webkit-keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+.btn-gen-7 {
+  border: 2px solid #343A40;
+}
+
+.btn-gen-7:hover {
+  border: 2px solid #ff96ad;
+  color: #ff96ad;
+  background-color: #17181c;
+}
+
+/* start global button fun element styling */
+.btn-fun {
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  margin: 10px 10px;
+  min-width: 200px;
+  padding: 20px 30px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+.btn-fun:active {
+  transform: translateY(3px);
+}
+.btn-fun::after, .btn-fun::before {
+  border-radius: 3px;
+}
+
+.shrink-border {
+  background-color: transparent;
+  color: #5b5b76;
+}
+.shrink-border:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: #e6e6e6;
+}
+.shrink-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #5b5b76;
+  transition: opacity 0.3s, border 0.3s;
+}
+.shrink-border:hover::before {
+  opacity: 0;
+}
+.shrink-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 3px solid #e6e6e6;
+  opacity: 0;
+  z-index: -1;
+  transform: scaleX(1.1) scaleY(1.3);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.shrink-border:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+.material-bubble {
+  background-color: transparent;
+  color: #5b5b76;
+  border: none;
+  overflow: hidden;
+  box-shadow: none;
+}
+.material-bubble:hover {
+  color: #e6e6e6;
+}
+.material-bubble::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #5b5b76;
+  transition: opacity 0.3s, border 0.3s;
+}
+.material-bubble:hover::before {
+  opacity: 0;
+}
+.material-bubble::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #8f8fa8;
+  border-color: transparent;
+  border-radius: 50%;
+  transform: translate(0px, -67px) scale(0.1);
+  opacity: 0;
+  z-index: -1;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.material-bubble:hover::after {
+  opacity: 1;
+  transform-origin: 100px 100px;
+  transform: scale(1) translate(0px, -67px);
 }
 
 /* end global button element styling */
@@ -411,6 +593,10 @@ header.sticky ul li a:hover {
   color: #333;
 }
 
+*::after, *::before {
+  box-sizing: border-box;
+}
+
 html::-webkit-scrollbar {
   width: 10px;
 }
@@ -436,6 +622,12 @@ main {
 .container {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 150px;
 }
 
 .row {
@@ -449,6 +641,22 @@ main {
   padding: 2rem;
 }
 
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.dummy-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
 @media screen and (max-width: 1200px) {
   /* Responsive layout - makes a two column-layout instead of four columns */
   .column {
@@ -457,28 +665,29 @@ main {
   }
 }
 @media screen and (max-width: 1024px) {
-  /* Responsive layout - makes a two column-layout instead of four columns */
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
 @media screen and (max-width: 900px) {
-  /* Responsive layout - makes a two column-layout instead of four columns */
   .column {
     flex: 50%;
     max-width: 50%;
   }
+
+  .banner-content, #btnScrollToTop,
+.dummy-content {
+    transform: scale(0.5);
+  }
 }
 @media screen and (max-width: 768px) {
-  /* Responsive layout - makes a two column-layout instead of four columns */
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
 @media screen and (max-width: 620px) {
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   .column {
     flex: 100%;
     max-width: 100%;
@@ -491,9 +700,6 @@ main {
   /* .topnav ul li:not(:first-child) {
       display: none;
   } */
-  /* #btnHamburgerMenu {
-      display: block;
-  } */
   header .logo {
     margin-left: -80px;
     transition: 0.6s;
@@ -504,14 +710,12 @@ main {
   }
 }
 @media screen and (max-width: 480px) {
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   .column {
     flex: 100%;
     max-width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   .column {
     flex: 100%;
     max-width: 100%;
