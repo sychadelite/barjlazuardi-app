@@ -55,10 +55,6 @@
         flex: 50%;
         max-width: 50%;
     }
-    .banner-content, #btnScrollToTop,
-    .dummy-content {
-        transform: scale(0.5);
-    }
 }
 @media screen and (max-width: 768px) {
     .column {
@@ -96,6 +92,10 @@
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+    .banner-content, #btnScrollToTop,
+    .dummy-content {
+        transform: scale(0.5);
     }
 }
 /* end layout styling */

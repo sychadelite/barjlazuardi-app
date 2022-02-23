@@ -16,13 +16,39 @@ https://ianlunn.github.io/Hover/
     border: none;
     outline: none;
     cursor: pointer;
-    z-index: 100;
+    z-index: 10;
 }
 
 #btnScrollToTop:active {
     background: #cc2333;
 }
 /* end scroll to top button styling */
+
+/* start floating chat bot button styling */
+.btnFloatChatBot {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e62739;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: 2s;
+    cursor: pointer;
+    z-index: 10;
+
+    &:hover {
+        transform: rotate(720deg);
+    }
+
+    &:active {
+        transform: rotate(720deg) scale(1.2);
+    }
+}
+/* end floating chat bot button styling */
 
 /* start hamburger menu button styling */
 #btnHamburgerMenu {

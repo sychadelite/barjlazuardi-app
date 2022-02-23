@@ -5746,6 +5746,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -5780,12 +5782,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {},
   setup: function setup() {},
   data: function data() {
     return {};
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ChatBotSharinganImg').on({
+      'click': function click() {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ChatBotSharinganImg').attr('src', 'http://3.bp.blogspot.com/-kEQlUoldLIg/UN-zB7mu-cI/AAAAAAAADSA/UFlYMQNHWBM/s1600/sharingan2.png');
+      }
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".ChatBotSharinganImg").hover(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('src', 'http://2.bp.blogspot.com/-MqCteiEjOXw/UN_Cu5al5wI/AAAAAAAADVc/w2x6MMc493Y/s1600/sharingan8.png');
+      }, function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('src', 'http://3.bp.blogspot.com/-tNJQhrv9vyg/UN-5E65f5OI/AAAAAAAADUQ/7zBqLyMX75c/s1600/sharingan7.png');
+      });
+    });
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+      // $(".ChatBotSharinganImg").mouseup(function(){
+      //     $(this).attr('src', 'http://3.bp.blogspot.com/-R4PPusmdUTU/UN-1zzTlclI/AAAAAAAADTc/YLO3cEMqqBY/s1600/sharingan4.png');
+      // });
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(".ChatBotSharinganImg").mousedown(function () {
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('src', 'http://3.bp.blogspot.com/-R4PPusmdUTU/UN-1zzTlclI/AAAAAAAADTc/YLO3cEMqqBY/s1600/sharingan4.png');
+      });
+    });
+  },
   methods: {
     swalGetMovie: function swalGetMovie() {
       swal({
@@ -41640,6 +41672,8 @@ var render = function () {
     ]),
     _vm._v(" "),
     _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
   ])
 }
 var staticRenderFns = [
@@ -41697,6 +41731,21 @@ var staticRenderFns = [
           ]),
         ]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("button", { staticClass: "btnFloatChatBot", attrs: { id: "" } }, [
+      _c("img", {
+        staticClass: "ChatBotSharinganImg",
+        staticStyle: { transition: "2s" },
+        attrs: {
+          src: "http://3.bp.blogspot.com/-tNJQhrv9vyg/UN-5E65f5OI/AAAAAAAADUQ/7zBqLyMX75c/s1600/sharingan7.png",
+          alt: "",
+        },
+      }),
     ])
   },
 ]

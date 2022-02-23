@@ -29,11 +29,23 @@
                 </div>
             </div>
         </section>
+
+        <!-- start floating chatbot button -->
+        <!-- http://anonymous-cyber.blogspot.com/2013/05/cara-membuat-spin-sharingan-with-css.html -->
+        <button id="" class="btnFloatChatBot">
+            <img class="ChatBotSharinganImg" src="http://3.bp.blogspot.com/-tNJQhrv9vyg/UN-5E65f5OI/AAAAAAAADUQ/7zBqLyMX75c/s1600/sharingan7.png" alt="" style="transition: 2s;">
+        </button>
+        <!-- end floating chatbot button -->
     </div>
 </template>
 
 <script>
+import $ from 'jquery'
+
 export default {
+    components: {
+        
+    },
     setup() {
         
     },
@@ -43,7 +55,28 @@ export default {
         }
     },
     mounted() {
+        $('.ChatBotSharinganImg').on({
+            'click': function(){
+                $('.ChatBotSharinganImg').attr('src','http://3.bp.blogspot.com/-kEQlUoldLIg/UN-zB7mu-cI/AAAAAAAADSA/UFlYMQNHWBM/s1600/sharingan2.png');
+            }
+        });
         
+        $(document).ready(function(){  
+            $(".ChatBotSharinganImg").hover(function() {
+                $(this).attr('src', 'http://2.bp.blogspot.com/-MqCteiEjOXw/UN_Cu5al5wI/AAAAAAAADVc/w2x6MMc493Y/s1600/sharingan8.png');  
+            }, function() {  
+                $(this).attr('src', 'http://3.bp.blogspot.com/-tNJQhrv9vyg/UN-5E65f5OI/AAAAAAAADUQ/7zBqLyMX75c/s1600/sharingan7.png');  
+            });  
+        });  
+
+        $(document).ready(function(){
+            // $(".ChatBotSharinganImg").mouseup(function(){
+            //     $(this).attr('src', 'http://3.bp.blogspot.com/-R4PPusmdUTU/UN-1zzTlclI/AAAAAAAADTc/YLO3cEMqqBY/s1600/sharingan4.png');
+            // });
+            $(".ChatBotSharinganImg").mousedown(function(){
+                $(this).attr('src', 'http://3.bp.blogspot.com/-R4PPusmdUTU/UN-1zzTlclI/AAAAAAAADTc/YLO3cEMqqBY/s1600/sharingan4.png');
+            });
+        });
     },
     methods: {
         swalGetMovie() {
