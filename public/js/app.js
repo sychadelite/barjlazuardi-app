@@ -5381,56 +5381,56 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push({
         name: 'LandingPage',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNav();
     },
     toLandingPageByOverlay: function toLandingPageByOverlay() {
       this.$router.push({
         name: 'LandingPage',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNavByOverlay();
     },
     toPortofolio: function toPortofolio() {
       this.$router.push({
         name: 'Portofolio',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNav();
     },
     toFeatures: function toFeatures() {
       this.$router.push({
         name: 'Features',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNav();
     },
     toPortofolioByOverlay: function toPortofolioByOverlay() {
       this.$router.push({
         name: 'Portofolio',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNavByOverlay();
     },
     toFeaturesByOverlay: function toFeaturesByOverlay() {
       this.$router.push({
         name: 'Features',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNavByOverlay();
     },
     toProfile: function toProfile() {
       this.$router.push({
         name: 'Profile',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNav();
     },
     toProfileByOverlay: function toProfileByOverlay() {
       this.$router.push({
         name: 'Profile',
         params: {}
-      });
+      })["catch"](function () {});
       this.closeNavByOverlay();
     }
   }
@@ -6071,6 +6071,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+//
 //
 //
 //
@@ -42074,100 +42075,32 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "dummy-section" }, [
-    _c("div", { staticClass: "dummy-content" }, [
-      _c("h1", { staticClass: "animate__animated animate__bounce" }, [
-        _vm._v("Ini Profile"),
-      ]),
-      _vm._v(" "),
-      _c("div", [
+    _c(
+      "div",
+      { staticClass: "dummy-content" },
+      [
         _c(
-          "object",
+          "h1",
           {
-            attrs: {
-              data: "http://stackoverflow.com/does-not-exist.png",
-              type: "image/png",
-            },
+            staticClass: "animate__animated animate__jello",
+            staticStyle: { "margin-top": "50%" },
           },
-          [
-            _c("img", {
-              staticClass:
-                "rounded-circle center-cropped avatar animate__animated animate__rotateIn",
-              staticStyle: { "--animate-duration": "2s" },
-              attrs: { src: _vm.randomImage.picture.large, alt: "Image API" },
-            }),
-          ]
+          [_vm._v("My Profile")]
         ),
         _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
+        _c("lottie-player", {
+          staticStyle: { width: "300px", height: "300px" },
+          attrs: {
+            src: "https://assets9.lottiefiles.com/private_files/lf30_y9czxcb9.json",
+            background: "transparent",
+            speed: "1",
+            loop: "",
+            autoplay: "",
           },
-          [_vm._v("Name: "), _c("strong", [_vm._v(_vm._s(_vm.randomName))])]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
-          },
-          [
-            _vm._v("Email: "),
-            _c("strong", [_vm._v(_vm._s(_vm.randomImage.email))]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
-          },
-          [
-            _vm._v("Gender: "),
-            _c("strong", [_vm._v(_vm._s(_vm.randomImage.gender))]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
-          },
-          [
-            _vm._v("Capital: "),
-            _c("strong", [_vm._v(_vm._s(_vm.randomCountry.capital))]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
-          },
-          [
-            _vm._v("Language: "),
-            _c("strong", [_vm._v(_vm._s(_vm.randomCountry.language))]),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          {
-            staticClass: "animate__animated animate__zoomInLeft",
-            staticStyle: { "--animate-duration": "2s" },
-          },
-          [
-            _vm._v("Nations: "),
-            _c("strong", [_vm._v(_vm._s(_vm.randomCountry.nationality))]),
-          ]
-        ),
-      ]),
-    ]),
+        }),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = []

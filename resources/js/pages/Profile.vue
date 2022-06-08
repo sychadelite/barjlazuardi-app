@@ -1,8 +1,8 @@
 <template>
     <div class="dummy-section">
         <div class="dummy-content">
-            <h1 class="animate__animated animate__bounce">Ini Profile</h1>  
-            <div>
+            <h1 class="animate__animated animate__jello" style="margin-top: 50%;">My Profile</h1>  
+            <!-- <div>
                 <object data="http://stackoverflow.com/does-not-exist.png" type="image/png">
                     <img class="rounded-circle center-cropped avatar animate__animated animate__rotateIn" style="--animate-duration: 2s;" :src="randomImage.picture.large" alt="Image API">
                 </object>
@@ -12,7 +12,8 @@
                 <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Capital: <strong>{{ randomCountry.capital }}</strong></p>
                 <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Language: <strong>{{ randomCountry.language }}</strong></p>
                 <p class="animate__animated animate__zoomInLeft" style="--animate-duration: 2s;">Nations: <strong>{{ randomCountry.nationality }}</strong></p>
-            </div>
+            </div> -->
+            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_y9czxcb9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
         </div>
     </div>
 </template>

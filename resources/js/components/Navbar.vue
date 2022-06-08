@@ -81,56 +81,56 @@ export default {
             this.$router.push({
                 name: 'LandingPage',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNav();
         },
         toLandingPageByOverlay() {                      
             this.$router.push({
                 name: 'LandingPage',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNavByOverlay();
         },
         toPortofolio() {                      
             this.$router.push({
                 name: 'Portofolio',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNav();
         },
         toFeatures() {                      
             this.$router.push({
                 name: 'Features',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNav();
         },
         toPortofolioByOverlay() {                      
             this.$router.push({
                 name: 'Portofolio',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNavByOverlay();
         },
         toFeaturesByOverlay() {                      
             this.$router.push({
                 name: 'Features',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNavByOverlay();
         },
         toProfile() {                      
             this.$router.push({
                 name: 'Profile',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNav();
         },
         toProfileByOverlay() {                      
             this.$router.push({
                 name: 'Profile',
                 params: {}
-            })
+            }).catch(()=>{});
             this.closeNavByOverlay();
         },
     }
