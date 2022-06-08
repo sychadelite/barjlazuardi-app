@@ -1,7 +1,7 @@
 <template>
     <div class="dummy-section">
         <div class="dummy-content">
-            <h1 class="animate__animated animate__jello" style="margin-top: 50%;">My Profile</h1>  
+            <h1 class="mt-half animate__animated animate__jello">My Profile</h1>  
             <!-- <div>
                 <object data="http://stackoverflow.com/does-not-exist.png" type="image/png">
                     <img class="rounded-circle center-cropped avatar animate__animated animate__rotateIn" style="--animate-duration: 2s;" :src="randomImage.picture.large" alt="Image API">
@@ -55,7 +55,7 @@ export default {
         getRandomName() {
             axios.get('https://random-data-api.com/api/name/random_name')
                 .then(response => {                 
-                    console.log(response.data)
+                    // console.log(response.data)
                     this.randomName = response.data.name_with_middle
             })
             // fetch('https://random-data-api.com/api/blood/random_blood')
@@ -65,14 +65,14 @@ export default {
         getRandomCountry() {
             axios.get('https://random-data-api.com/api/nation/random_nation')
                 .then(response => {
-                    console.log(response.data)
+                    // console.log(response.data)
                     this.randomCountry = response.data
                 })
         },
         getRandomImage() {
             axios.get('https://randomuser.me/api/')
                 .then(response => {
-                    console.log(response.data.results[0])
+                    // console.log(response.data.results[0])
                     this.randomImage = response.data.results[0]
                 })
         },
@@ -84,7 +84,4 @@ export default {
 </script>
 
 <style>
-.some-class {
-    font-weight: 700;
-}
 </style>

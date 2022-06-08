@@ -1,4 +1,5 @@
-/* start layout styling */
+// --------- Start Layout Styling ---------
+/* start property styling */
 .container {
     height: 100%;
     width: 100%;
@@ -26,8 +27,17 @@
     flex-direction: column; 
     align-content: center;
 }
+/* end property styling */
 
 
+/* start margin styling */
+.mt-half {
+    margin-top: 50%;
+}
+/* end margin styling */
+
+
+/* start section styling */
 .dummy-section {
     display: flex;
     justify-content: center;
@@ -36,8 +46,11 @@
     min-height: 100vh;
     color: #fff;
 }
+/* end section styling */
+// --------- End of Layout Styling ---------
 
 
+// start media query
 @media screen and (max-width: 1200px) {          /* Responsive layout - makes a two column-layout instead of four columns */
     .column {
         flex: 50%;
@@ -98,4 +111,4 @@
         transform: scale(0.5);
     }
 }
-/* end layout styling */
+// end media query

@@ -360,7 +360,6 @@ https://ianlunn.github.io/Hover/
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("/img/horvat.webp") center/cover;
   transition: 0.7s ease;
 }
 
@@ -1159,7 +1158,7 @@ main {
   overflow-x: hidden;
 }
 
-/* start layout styling */
+/* start property styling */
 .container {
   height: 100%;
   width: 100%;
@@ -1189,6 +1188,14 @@ main {
   align-content: center;
 }
 
+/* end property styling */
+/* start margin styling */
+.mt-half {
+  margin-top: 50%;
+}
+
+/* end margin styling */
+/* start section styling */
 .dummy-section {
   display: flex;
   justify-content: center;
@@ -1198,6 +1205,7 @@ main {
   color: #fff;
 }
 
+/* end section styling */
 @media screen and (max-width: 1200px) {
   /* Responsive layout - makes a two column-layout instead of four columns */
   .column {
@@ -1262,4 +1270,3 @@ main {
     transform: scale(0.5);
   }
 }
-/* end layout styling */
