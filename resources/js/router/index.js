@@ -15,7 +15,7 @@ import NotFound from '../pages/NotFound.vue'
 const routes = [
     {
         name: 'LandingPage',
-        path: '/welcome',
+        path: '/',
         component: LandingPage
     },
     {

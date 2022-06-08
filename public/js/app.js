@@ -6249,7 +6249,7 @@ var Profile = (__webpack_require__(/*! ../pages/Profile.vue */ "./resources/js/p
 
 var routes = [{
   name: 'LandingPage',
-  path: '/welcome',
+  path: '/',
   component: LandingPage
 }, {
   name: 'Portofolio',
@@ -40973,8 +40973,7 @@ var render = function () {
           {
             class: {
               "nav-menu-active":
-                _vm.$route.fullPath === "/welcome" ||
-                _vm.$route.fullPath === "/welcome",
+                _vm.$route.fullPath === "/" || _vm.$route.fullPath === "/",
             },
             on: {
               click: function ($event) {
@@ -41095,8 +41094,7 @@ var render = function () {
             staticClass: "nav-link",
             class: {
               "nav-menu-active":
-                _vm.$route.fullPath === "/welcome" ||
-                _vm.$route.fullPath === "/welcome",
+                _vm.$route.fullPath === "/" || _vm.$route.fullPath === "/",
             },
             attrs: { href: "#" },
             on: {

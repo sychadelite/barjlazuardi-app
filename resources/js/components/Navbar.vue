@@ -5,7 +5,7 @@
         <p class="logo-text">Buzz</p>
     </a>
     <ul class="nav-menu">
-        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/welcome' || $route.fullPath === '/welcome'}" @click.prevent="toLandingPage()">Home</a></li>
+        <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/' || $route.fullPath === '/'}" @click.prevent="toLandingPage()">Home</a></li>
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/portofolio' || $route.fullPath === '/portofolio'}" @click.prevent="toPortofolio()">Portofolio</a></li>
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/features' || $route.fullPath === '/features'}" @click.prevent="toFeatures()">Features</a></li>
         <li class="nav-item"><a :class="{'nav-menu-active': $route.fullPath ==='/profile' || $route.fullPath === '/profile'}" @click.prevent="toProfile()">Profile</a></li>
@@ -18,7 +18,7 @@
     <div id="myLinks" class="overlay">
         <a href="javascript:void(0)" class="closebtn" @click.prevent="closeNavByOverlay()">&times;</a>
         <div class="overlay-content">
-            <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/welcome' || $route.fullPath === '/welcome'}" @click.prevent="toLandingPageByOverlay()" href="#">Home</a>
+            <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/' || $route.fullPath === '/'}" @click.prevent="toLandingPageByOverlay()" href="#">Home</a>
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/portofolio' || $route.fullPath === '/portofolio'}" @click.prevent="toPortofolioByOverlay()" href="#">Portofolio</a>
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/features' || $route.fullPath === '/features'}" @click.prevent="toFeaturesByOverlay()" href="#">Features</a>
             <a class="nav-link" :class="{'nav-menu-active': $route.fullPath ==='/profile' || $route.fullPath === '/profile'}" @click.prevent="toProfileByOverlay()" href="#">Profile</a>
