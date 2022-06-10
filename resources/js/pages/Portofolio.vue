@@ -1,18 +1,36 @@
 <template>
     <div>
+        <section class="dummy-section" style="background-color: #010001;">
+            <!-- autoplay will only work if you specify it as muted by default -->
+            <!-- <iframe width="1060" height="615" src="https://www.youtube.com/embed/L_gGKD8UNKA?autoplay=1&mute=1" title="Youtube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <video id="myVideo" autoplay loop muted>
+                <source src="/assets/video/Rotation of The Planet Earth.mp4">
+            </video>
+            
+            <!-- Optional: some overlay text to describe the video -->                
+            <div class="section-content content-video">
+                <h1 class="section-title">Description</h1>
+                <marquee behavior="scroll" direction="right" style="color: white;">Here is some informations on scrolling text... left to right!</marquee>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn" @click.prevent="pauseVideo()">Pause</button>
+            </div>
+        </section>
+        
         <section class="dummy-section">
-            <div class="dummy-content">
-                <h1 class="animate__animated animate__swing">Ini Portofolio</h1>
+            <div class="section-content">
+                <h1 class="section-title animate__animated animate__swing">Ini Portofolio</h1>
                 <p>My name is Mohammad Barj Lazuardi Dindashwara</p>
             </div>
         </section>
 
         <section class="dummy-section">
-            <div class="wave">
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
+            <div class="section-content">
+                <div class="wave">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
             </div>
         </section>
 
@@ -30,17 +48,72 @@ export default {
         BtnToTop
     },
     mounted() {
-        // this.scrollToTop()
+        
     },
     methods: {
+        pauseVideo() {
+            // Get the video
+            var video = document.getElementById("myVideo");
+
+            // Get the button
+            var btn = document.getElementById("myBtn");
+
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        },
         scrollToTop() {
             window.scrollTo(0,0);
         },
+    },
+    computed: {
+        
     }
 }
 </script>
 
 <style>
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content-video {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
 .wave {
     height: 306px;
     width: 306px;

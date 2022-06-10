@@ -353,6 +353,7 @@ https://ianlunn.github.io/Hover/
   background: #121212;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  transition: 0.4s;
 }
 
 .main-container::after {
@@ -401,7 +402,12 @@ https://ianlunn.github.io/Hover/
   padding: 5px 13px;
 }
 
-.main-container:hover,
+.main-container:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotate3d(11, 1, 20, -10deg);
+}
+
 .main-container:hover .info {
   cursor: pointer;
   opacity: 1;
@@ -1138,7 +1144,7 @@ header.sticky ul li a:hover {
 }
 
 html::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 html::-webkit-scrollbar-track {
@@ -1146,7 +1152,8 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #f9ca24;
+  background: linear-gradient(-45deg, #C193C5, #8091a7, #7BC6CC);
+  border-radius: 20px;
 }
 
 body {
@@ -1195,20 +1202,22 @@ main {
 }
 
 /* end margin styling */
-/* start section styling */
-.section-content {
+/* start text styling */
+.txt-center {
   text-align: center;
   color: #fff;
+}
+
+/* end text styling */
+/* start section styling */
+.section-content p {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 10px;
-}
-
-.section-content p {
-  margin-right: 1rem;
-  margin-left: 1rem;
 }
 
 .dummy-section {
@@ -1218,16 +1227,6 @@ main {
   text-align: center;
   min-height: 100vh;
   color: #fff;
-}
-
-.dummy-title {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.dummy-content p {
-  margin-right: 1rem;
-  margin-left: 1rem;
 }
 
 /* end section styling */
@@ -1290,8 +1289,8 @@ main {
     max-width: 100%;
   }
 
-  .banner-content, #btnScrollToTop,
-.dummy-content {
-    transform: scale(0.5);
+  .banner-content, .section-content,
+#btnScrollToTop {
+    transform: scale(0.8);
   }
 }

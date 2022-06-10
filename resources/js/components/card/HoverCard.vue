@@ -52,7 +52,7 @@ export default {
                 case 1:
                     this.person.name = 'Barj Lazuardi'
                     this.person.job = 'Junior Web Developer'
-                    this.person.photo = '/img/20211122_142826_cropped.jpg'
+                    this.person.photo = '/assets/avatar/AREmoji_20220514_094126_837-removebg-preview.png'
                     this.person.social.instagram = 'https://www.instagram.com/barjlazuardi/'
                     this.person.social.github = 'https://github.com/sychadelite'
                     this.person.social.whatsapp = 87781303038
@@ -60,7 +60,7 @@ export default {
                 case 2:
                     this.person.name = 'Adam Canray'
                     this.person.job = 'Senior Web Developer'
-                    this.person.photo = '/img/horvat.webp'
+                    this.person.photo = '/assets/avatar/41730448.png'
                     this.person.social.instagram = 'https://www.instagram.com/adamcanray/'
                     this.person.social.github = 'https://github.com/adamcanray'
                     this.person.social.whatsapp = undefined
@@ -68,7 +68,7 @@ export default {
                 case 3:
                     this.person.name = 'Idham Faizi'
                     this.person.job = 'System Analyst'
-                    this.person.photo = '/img/horvat.webp'
+                    this.person.photo = '/assets/avatar/41901421.png'
                     this.person.social.instagram = 'https://www.instagram.com/idhamfaizi/'
                     this.person.social.github = 'https://github.com/idhamfaizi'
                     this.person.social.whatsapp = undefined
@@ -76,7 +76,7 @@ export default {
                 case 4:
                     this.person.name = 'Michael Handi'
                     this.person.job = 'Mid Level Manager'
-                    this.person.photo = '/img/horvat.webp'
+                    this.person.photo = '/assets/img/horvat.webp'
                     this.person.social.instagram = 'https://www.instagram.com/handimichaell/'
                     this.person.social.github = undefined
                     this.person.social.whatsapp = undefined
@@ -84,7 +84,7 @@ export default {
                 case 5:
                     this.person.name = 'Fhicky Lukmansyah'
                     this.person.job = 'High Level Manager'
-                    this.person.photo = '/img/horvat.webp'
+                    this.person.photo = '/assets/img/horvat.webp'
                     this.person.social.instagram = 'https://www.instagram.com/fhickylukmans/'
                     this.person.social.github = undefined
                     this.person.social.whatsapp = undefined
@@ -92,7 +92,7 @@ export default {
                 default:
                     this.person.name = 'Anonymous'
                     this.person.job = 'Unemployed'
-                    this.person.photo = '/img/horvat.webp'
+                    this.person.photo = '/assets/img/horvat.webp'
                     this.person.social.instagram = undefined
                     this.person.social.github = undefined
                     this.person.social.whatsapp = undefined

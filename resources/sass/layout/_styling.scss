@@ -37,18 +37,22 @@
 /* end margin styling */
 
 
-/* start section styling */
-.section-content {
+/* start text styling */
+.txt-center { //section-content
     text-align: center;
     color: #fff;
+}
+/* end text styling */
+
+
+/* start section styling */
+.section-content p {
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 .section-title {
     text-align: center;
     margin-bottom: 10px;
-}
-.section-content p {
-    margin-right: 1rem;
-    margin-left: 1rem;
 }
 
 .dummy-section {
@@ -58,14 +62,6 @@
     text-align: center;
     min-height: 100vh;
     color: #fff;
-}
-.dummy-title {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.dummy-content p {
-    margin-right: 1rem;
-    margin-left: 1rem;
 }
 /* end section styling */
 // --------- End of Layout Styling ---------
@@ -127,9 +123,9 @@
         flex: 100%;
         max-width: 100%;
     }
-    .banner-content, #btnScrollToTop,
-    .dummy-content {
-        transform: scale(0.5);
+    .banner-content, .section-content,
+    #btnScrollToTop {
+        transform: scale(0.8);
     }
 }
 // end media query

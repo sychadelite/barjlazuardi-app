@@ -4,7 +4,7 @@
             <div class="swiper-slide slider-card" v-for="row in review.client" :key="row.id">
                 <div class="slider-card-content">
                     <div class="image">
-                        <img src="/img/horvat.webp" alt="horvat">
+                        <img src="/assets/avatar/AREmoji_20220514_093904_792.png" alt="horvat">
                     </div>
                     <div class="media-icons">
                         <i class="fab fa-facebook"></i>
@@ -197,7 +197,7 @@ export default {
 
 <style>
 .slider-indicator {
-    --swiper-theme-color: #05344e;
+    --swiper-theme-color: #034947;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -5px;

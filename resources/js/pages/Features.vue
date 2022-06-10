@@ -1,13 +1,13 @@
 <template>
     <div>
         <section class="dummy-section">
-            <div class="dummy-content">
-                <h1 class="animate__animated animate__backInDown" style="margin-bottom: 10px;">Movie Search</h1>
+            <div class="section-content">
+                <h1 class="section-title animate__animated animate__backInDown" style="margin-bottom: 10px;">Movie Search</h1>
                 <button class="btn-fun shrink-border" @click.prevent="swalGetMovie()">Try it !</button>
             </div>
         </section>
         <section class="dummy-section">
-            <div class="dummy-content row">
+            <div class="section-content row">
                 <div class="column">
                     <h2>Button Gen</h2>
                     <div>

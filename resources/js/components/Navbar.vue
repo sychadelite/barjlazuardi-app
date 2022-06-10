@@ -1,7 +1,7 @@
 <template>
 <header id="navbar" class="topnav">
     <a href="#" class="logo">
-        <img src="/icon/buzz-form-toys-story.svg" class="logo-icon animate__animated animate__pulse animate__infinite" alt="logo" width="60" height="50" style="margin-right: 20px;">
+        <img src="/assets/icon/buzz-form-toys-story.svg" class="logo-icon animate__animated animate__pulse animate__infinite" alt="logo" width="60" height="50" style="margin-right: 20px;">
         <p class="logo-text">Buzz</p>
     </a>
     <ul class="nav-menu">

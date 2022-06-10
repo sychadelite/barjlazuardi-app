@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="icon" href="/icon/buzz-form-toys-story.svg">
+    <link rel="icon" href="/assets/icon/buz-lightyear-seek.svg">
     <!-- Link Material Icons Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Link Font Awesome -->
@@ -29,6 +29,8 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script> -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
