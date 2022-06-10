@@ -50,8 +50,8 @@ https://ianlunn.github.io/Hover/
 /* start scroll to top button styling */
 #btnScrollToTop {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 4%;
+  right: 2%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1292,5 +1292,26 @@ main {
   .banner-content, .section-content,
 #btnScrollToTop {
     transform: scale(0.8);
+  }
+
+  #window-scale p {
+    font-size: 4px;
+  }
+}
+@media screen and (max-height: 320px) {
+  .banner-content {
+    transform: scale(0.6);
+  }
+
+  .banner-content-logo {
+    margin-top: 100px;
+  }
+
+  #btnScrollToTop {
+    transform: scale(0.4);
+  }
+
+  #window-scale p {
+    font-size: 4px;
   }
 }

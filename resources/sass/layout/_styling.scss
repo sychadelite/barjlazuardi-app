@@ -127,5 +127,25 @@
     #btnScrollToTop {
         transform: scale(0.8);
     }
+
+    #window-scale p {
+        font-size: 4px;
+    }
+}
+@media screen and (max-height: 320px) {    
+    .banner-content {
+        transform: scale(0.6);
+    }
+    .banner-content-logo {
+        margin-top: 100px;
+    }
+
+    #btnScrollToTop {
+        transform: scale(0.4);
+    }
+
+    #window-scale p {
+        font-size: 4px;
+    }
 }
 // end media query

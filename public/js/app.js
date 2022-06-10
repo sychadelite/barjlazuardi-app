@@ -6089,6 +6089,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -11661,7 +11665,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* start banner section */\n.banner {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 120vh;\r\n    /* background-image: url('/assets/background/forest-05.webp'); */\r\n    background-size: cover;\n}\n.banner-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    color: #fff;\n}\n.banner-content-logo {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-bottom: 1rem;\r\n    transition: 0.2s;\n}\n.banner-content-title {\r\n    text-align: center;\r\n    margin-right: 1rem;\r\n    margin-left: 1rem;\n}\n.banner-content-logo:hover {\r\n    transform: scale(0.9);\r\n    cursor: pointer;\r\n    transition: 0.2s;\r\n    filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service & reviews section */\n.advertisement-content,\r\n.reviews-content,\r\n.team-content,\r\n.service-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    /* min-height: 100vh; */\r\n    margin-bottom: 6.75rem;\r\n    margin-top: 6.75rem;\n}\r\n/* end service & reviews section */\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* start banner section */\n.banner {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 120vh;\r\n    /* background-image: url('/assets/background/forest-05.webp'); */\r\n    background-size: cover;\n}\n.banner-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    color: #fff;\n}\n.banner-content-logo {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-bottom: 2px;\r\n    transition: 0.2s;\n}\n.banner-content-title {\r\n    text-align: center;\r\n    margin-right: 1rem;\r\n    margin-left: 1rem;\n}\n.banner-content-logo:hover {\r\n    transform: scale(0.9);\r\n    cursor: pointer;\r\n    transition: 0.2s;\r\n    filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service & reviews section */\n.advertisement-content,\r\n.reviews-content,\r\n.team-content,\r\n.service-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    /* min-height: 100vh; */\r\n    margin-bottom: 6.75rem;\r\n    margin-top: 6.75rem;\n}\r\n/* end service & reviews section */\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -42137,7 +42141,7 @@ var render = function () {
         },
         [
           _c("div", { staticClass: "banner-content" }, [
-            _c("div", [
+            _c("div", { staticStyle: { "margin-top": "5%" } }, [
               _c("img", {
                 staticClass: "banner-content-logo",
                 attrs: {
@@ -42148,34 +42152,46 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _c("span", [
+              _c("span", { staticClass: "banner-content-title" }, [
                 _vm.windowWidth > 450
-                  ? _c("h1", { staticClass: "banner-content-title" }, [
-                      _vm._v("bot lightyear here, ready to serve!"),
-                    ])
+                  ? _c("h1", [_vm._v("bot lightyear here, ready to serve!")])
                   : _c("h1", { staticClass: "banner-content-title" }, [
                       _vm._v("bot lightyear here,"),
                       _c("br"),
                       _vm._v("ready to serve!"),
                     ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "banner-content-title" }, [
-                  _vm._v(
-                    " Window height: " +
-                      _vm._s(_vm.windowHeight) +
-                      " " +
-                      _vm._s(_vm.txtHeight)
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "Window width: " +
-                      _vm._s(_vm.windowWidth) +
-                      " " +
-                      _vm._s(_vm.txtWidth)
-                  ),
-                ]),
               ]),
             ]),
+          ]),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticStyle: {
+            position: "fixed",
+            bottom: "0",
+            left: "0",
+            "text-align": "start",
+            "font-size": "7px",
+            color: "#fff",
+          },
+          attrs: { id: "window-scale" },
+        },
+        [
+          _c("p", [
+            _vm._v("Window height: " + _vm._s(_vm.windowHeight)),
+            _c("br"),
+            _vm._v(_vm._s(_vm.txtHeight)),
+            _c("br"),
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("Window width: " + _vm._s(_vm.windowWidth)),
+            _c("br"),
+            _vm._v(_vm._s(_vm.txtWidth)),
+            _c("br"),
           ]),
         ]
       ),
@@ -42396,24 +42412,29 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("section", { staticClass: "dummy-section" }, [
+      _c(
+        "div",
+        { staticClass: "section-content" },
+        [
+          _c("lottie-player", {
+            staticStyle: { width: "300px", height: "300px" },
+            attrs: {
+              src: "https://assets4.lottiefiles.com/packages/lf20_teutzxdt.json",
+              background: "transparent",
+              speed: "1",
+              loop: "",
+              autoplay: "",
+            },
+          }),
+        ],
+        1
+      ),
+    ]),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("section", { staticClass: "dummy-section" }, [
-        _c("div", { staticClass: "section-content" }, [
-          _c("h1", { staticClass: "section-title" }, [
-            _vm._v("404 : Not Found"),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

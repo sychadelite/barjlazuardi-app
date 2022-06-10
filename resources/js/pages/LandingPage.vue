@@ -3,17 +3,21 @@
         <!-- start banner section -->
         <section id="banner" class="banner" style="background-image: url('/assets/background/forest-05.webp');">
             <div class="banner-content">
-                <div>
+                <div style="margin-top: 5%;">
                     <img class="banner-content-logo" src="/assets/icon/buz-lightyear-seek.svg" alt="kali" height="100" width="100">
-                    <span>
-                        <h1 class="banner-content-title" v-if="windowWidth > 450">bot lightyear here, ready to serve!</h1>
+                    <span class="banner-content-title">
+                        <h1 v-if="windowWidth > 450">bot lightyear here, ready to serve!</h1>
                         <h1 class="banner-content-title" v-else>bot lightyear here,<br>ready to serve!</h1>
-                        <p class="banner-content-title"> Window height: {{ windowHeight }} {{ txtHeight }}<br>Window width: {{ windowWidth }} {{ txtWidth }}</p>
-                    </span>
+                    </span>              
                 </div>
             </div>
         </section>
         <!-- end banner section -->
+
+        <div id="window-scale" style="position: fixed; bottom: 0; left: 0; text-align: start; font-size: 7px; color: #fff">
+            <p>Window height: {{ windowHeight }}<br>{{ txtHeight }}<br></p>
+            <p>Window width: {{ windowWidth }}<br>{{ txtWidth }}<br></p>
+        </div>
 
         <!-- start services section -->
         <section id="service" class="service">
@@ -185,7 +189,7 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2px;
     transition: 0.2s;
 }
 
