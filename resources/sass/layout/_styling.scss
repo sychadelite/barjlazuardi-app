@@ -16,8 +16,8 @@
     flex-wrap: wrap;
 }
 
-.column {                                        /* Create four equal columns that sits next to each other */
-    flex: 25%;
+.column {                                        /* Create maximum 5 equal columns that sits next to each other in one row */
+    flex: 20%;
     padding: 2rem;
 }
 
@@ -38,6 +38,19 @@
 
 
 /* start section styling */
+.section-content {
+    text-align: center;
+    color: #fff;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.section-content p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 .dummy-section {
     display: flex;
     justify-content: center;
@@ -45,6 +58,14 @@
     text-align: center;
     min-height: 100vh;
     color: #fff;
+}
+.dummy-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dummy-content p {
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 /* end section styling */
 // --------- End of Layout Styling ---------

@@ -28,6 +28,7 @@
         "sweetalert": "^2.1.2",
         "swiper": "^7.4.1",
         "vue-router": "^3.5.3",
+        "vue-tippy": "^4.13.0",
         "vuex": "^3.6.2"
     }
 }

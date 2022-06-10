@@ -122,7 +122,7 @@ https://ianlunn.github.io/Hover/
 .swiper-button-next, .swiper-button-prev {
   opacity: 0.6;
   --swiper-navigation-size: 20px;
-  --swiper-theme-color: #7d2ae8;
+  --swiper-theme-color: #012423;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
@@ -133,7 +133,7 @@ https://ianlunn.github.io/Hover/
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #7d2ae8;
+  background: #012423;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   color: #fff;
   border: none;
@@ -143,7 +143,7 @@ https://ianlunn.github.io/Hover/
 }
 
 #btnNavigatorSlider:active {
-  background: #6616d0;
+  background: #034947;
 }
 
 /* end swiper button styling */
@@ -1086,7 +1086,7 @@ header ul li a:hover {
 
 header.sticky {
   padding: 5px 100px;
-  background: #f2f2f2;
+  background: #efefef;
   border-radius: 0 0 20px 20px;
 }
 
@@ -1176,8 +1176,8 @@ main {
 }
 
 .column {
-  /* Create four equal columns that sits next to each other */
-  flex: 25%;
+  /* Create maximum 5 equal columns that sits next to each other in one row */
+  flex: 20%;
   padding: 2rem;
 }
 
@@ -1196,6 +1196,21 @@ main {
 
 /* end margin styling */
 /* start section styling */
+.section-content {
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .dummy-section {
   display: flex;
   justify-content: center;
@@ -1203,6 +1218,16 @@ main {
   text-align: center;
   min-height: 100vh;
   color: #fff;
+}
+
+.dummy-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dummy-content p {
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /* end section styling */
