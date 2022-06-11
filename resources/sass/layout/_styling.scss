@@ -1,0 +1,151 @@
+// --------- Start Layout Styling ---------
+/* start property styling */
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 150px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {                                        /* Create maximum 5 equal columns that sits next to each other in one row */
+    flex: 20%;
+    padding: 2rem;
+}
+
+.flex-col {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: column; 
+    align-content: center;
+}
+/* end property styling */
+
+
+/* start margin styling */
+.mt-half {
+    margin-top: 50%;
+}
+/* end margin styling */
+
+
+/* start text styling */
+.txt-center { //section-content
+    text-align: center;
+    color: #fff;
+}
+/* end text styling */
+
+
+/* start section styling */
+.section-content p {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dummy-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+/* end section styling */
+// --------- End of Layout Styling ---------
+
+
+// start media query
+@media screen and (max-width: 1200px) {          /* Responsive layout - makes a two column-layout instead of four columns */
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 620px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .topnav ul li {
+        display: none;
+    }
+    /* .topnav ul li:not(:first-child) {
+        display: none;
+    } */
+    header .logo {
+        margin-left: -80px;
+        transition: 0.6s;
+    }
+    .logo .logo-text {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .banner-content, .section-content,
+    #btnScrollToTop {
+        transform: scale(0.8);
+    }
+
+    #window-scale p {
+        font-size: 4px;
+    }
+}
+@media screen and (max-height: 320px) {    
+    .banner-content {
+        transform: scale(0.6);
+    }
+    .banner-content-logo {
+        margin-top: 100px;
+    }
+
+    #btnScrollToTop {
+        transform: scale(0.4);
+    }
+
+    #window-scale p {
+        font-size: 4px;
+    }
+}
+// end media query

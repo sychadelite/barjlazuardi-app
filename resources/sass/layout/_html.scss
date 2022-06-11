@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* transition: 0.2s; */
+}
+
+*::selection{
+    background: $base-yellow;
+    color: #333;
+}
+
+*::after, *::before {
+  box-sizing: border-box
+}
+
+html::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-track{
+    background: $base-dark;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: linear-gradient(-45deg, #C193C5, #8091a7, #7BC6CC);
+    border-radius: 20px;
+}
+
+body {
+    background: $base-dark;
+    min-width: 100%;
+}
+
+main {
+    overflow-x: hidden; //https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
+}

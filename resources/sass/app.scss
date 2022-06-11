@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// Variables
+@import 'variables';
+
+// Animation
+@import 'animation/_ripple.scss';
+
+// Component
+@import 'component/_button.scss';
+@import 'component/_card.scss';
+@import 'component/_floated.scss';
+@import 'component/_image.scss';
+@import 'component/_navbar.scss';
+
+// Layout
+@import 'layout/_html.scss';
+@import 'layout/_styling.scss';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
