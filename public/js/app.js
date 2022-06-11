@@ -6313,7 +6313,6 @@ __webpack_require__.r(__webpack_exports__);
       var _this3 = this;
 
       axios.get('https://randomuser.me/api/').then(function (response) {
-        console.log(response.data.results);
         _this3.randomImage = response.data.results[0];
       });
     },

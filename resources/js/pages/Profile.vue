@@ -61,7 +61,6 @@ export default {
         getRandomImage() {
             axios.get('https://randomuser.me/api/')
                 .then(response => {
-                    console.log(response.data.results)
                     this.randomImage = response.data.results[0]
                 })
         },
