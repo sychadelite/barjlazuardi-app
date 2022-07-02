@@ -38,9 +38,11 @@
 
         <!-- start reviews section -->
         <section id="reviews" class="reviews">
-            <div class="section-content txt-center">
-                <h1 class="section-title">Clients Satisfaction</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae.</p>
+            <div class="reviews-content">
+                <div class="section-content txt-center">
+                    <h1 class="section-title">Clients Satisfaction</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae.</p>
+                </div>
             </div>
         
             <div class="reviews-content">
@@ -74,9 +76,11 @@
 
         <!-- start advertisement section -->
         <section id="advertisement" class="advertisement">
-            <div class="section-content txt-center">
-                <h1 class="section-title">Valueable Information</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae.</p>
+            <div class="advertisement-content">
+                <div class="section-content txt-center">
+                    <h1 class="section-title">Valueable Information</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae.</p>
+                </div>
             </div>
         
             <div class="advertisement-content">

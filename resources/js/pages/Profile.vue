@@ -1,10 +1,10 @@
 <template>
-    <div class="dummy-section">
+    <section class="dummy-section">
         <div class="section-content">
             <h1 class="section-title mt-half animate__animated animate__jello">My Profile</h1>
             <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_y9czxcb9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

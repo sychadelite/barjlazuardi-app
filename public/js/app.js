@@ -6093,6 +6093,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -11664,7 +11668,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* start banner section */\n.banner {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 120vh;\r\n    /* background-image: url('/assets/background/forest-05.webp'); */\r\n    background-size: cover;\n}\n.banner-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    color: #fff;\n}\n.banner-content-logo {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-bottom: 2px;\r\n    transition: 0.2s;\n}\n.banner-content-title {\r\n    text-align: center;\r\n    margin-right: 1rem;\r\n    margin-left: 1rem;\n}\n.banner-content-logo:hover {\r\n    transform: scale(0.9);\r\n    cursor: pointer;\r\n    transition: 0.2s;\r\n    filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service & reviews section */\n.advertisement-content,\r\n.reviews-content,\r\n.team-content,\r\n.service-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    /* min-height: 100vh; */\r\n    margin-bottom: 6.75rem;\r\n    margin-top: 6.75rem;\n}\r\n/* end service & reviews section */\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* start banner section */\n.banner {\r\n    position: relative;\r\n    width: 100%;\r\n    height: 120vh;\r\n    /* background-image: url('/assets/background/forest-05.webp'); */\r\n    background-size: cover;\n}\n.banner-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    color: #fff;\n}\n.banner-content-logo {\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    margin-bottom: 2px;\r\n    transition: 0.2s;\n}\n.banner-content-title {\r\n    text-align: center;\r\n    margin-right: 1rem;\r\n    margin-left: 1rem;\n}\n.banner-content-logo:hover {\r\n    transform: scale(0.9);\r\n    cursor: pointer;\r\n    transition: 0.2s;\r\n    filter: drop-shadow(0 0 30px #333);\n}\r\n/* end banner section */\r\n\r\n\r\n/* start service & reviews section */\n.advertisement-content,\r\n.reviews-content,\r\n.team-content,\r\n.service-content {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    /* min-height: 100vh; */\r\n    margin-bottom: 6.75rem;\r\n    margin-top: 6.75rem;\n}\r\n/* end service & reviews section */\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -42333,15 +42337,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section-content txt-center" }, [
-      _c("h1", { staticClass: "section-title" }, [
-        _vm._v("Clients Satisfaction"),
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae."
-        ),
+    return _c("div", { staticClass: "reviews-content" }, [
+      _c("div", { staticClass: "section-content txt-center" }, [
+        _c("h1", { staticClass: "section-title" }, [
+          _vm._v("Clients Satisfaction"),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae."
+          ),
+        ]),
       ]),
     ])
   },
@@ -42363,15 +42369,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section-content txt-center" }, [
-      _c("h1", { staticClass: "section-title" }, [
-        _vm._v("Valueable Information"),
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae."
-        ),
+    return _c("div", { staticClass: "advertisement-content" }, [
+      _c("div", { staticClass: "section-content txt-center" }, [
+        _c("h1", { staticClass: "section-title" }, [
+          _vm._v("Valueable Information"),
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos vero, expedita veritatis quam tenetur pariatur reprehenderit ea sed, eveniet doloremque quae, laudantium non. Nesciunt cum fugiat iste, repudiandae modi recusandae."
+          ),
+        ]),
       ]),
     ])
   },
@@ -42600,7 +42608,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "dummy-section" }, [
+  return _c("section", { staticClass: "dummy-section" }, [
     _c(
       "div",
       { staticClass: "section-content" },
